@@ -1,0 +1,9 @@
+PH27639 Stopped application may show as started in collective controller.
+OLGH12074 Webcontainer property decodeUrlPlusSign issue
+OLGH12450 Batch: Fixes for remote partition job logs
+OLGH12523 Failed to parse Created TimeStamp in UsernameTokenValidator
+OLGH12695 JAX-RS Application Proxy should override getProperties()
+OLGH12780 CWMRX1001W seen in messages.log
+OLGH12865 spring-cloud-starter causes ApplicationStarted event to be fired before the ModuleStarted events for Spring Boot web apps
+OLGH12967 "peer not authenticated" failures in RP to OP communication on some versions of Java 11
+OLGH13094 MDB message listener method name restricted from starting with "ejb"
