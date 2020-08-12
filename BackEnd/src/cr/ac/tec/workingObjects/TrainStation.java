@@ -9,6 +9,9 @@ public class TrainStation implements Comparable<TrainStation> {
 	
 	private int[] coordinates;
 	private String name;
+	private String ID;
+	private String color;
+	
 	
 	public int[] getCoordinates() {
 		return coordinates;

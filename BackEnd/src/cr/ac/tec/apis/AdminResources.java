@@ -2,12 +2,10 @@ package cr.ac.tec.apis;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.Response;
-
 import cr.ac.tec.adt.Graph;
 import cr.ac.tec.adt.Node;
 import cr.ac.tec.workingObjects.Purchase;
 import cr.ac.tec.workingObjects.TrainStation;
-
 import javax.ws.rs.core.MediaType;
 
 @Path("admin/")
@@ -47,12 +45,18 @@ public class AdminResources {
 	@DELETE
 	public Response deleteStop(@QueryParam("user") String user, @QueryParam("password") String password, @QueryParam("origin") String origin, @QueryParam("destiny") String destiny) {
 		if(user.equals(this.user)&&password.equals(this.password)) {
-			Node toS = Graph.getMainGraph().getNodes().get(new Node(new TrainStation(destiny, null)));
-			Node fromS = Graph.getMainGraph().getNodes().get(new Node(new TrainStation(origin, null)));	
-			if(fromS.getAdjacentNodes().containsKey(toS)) {
-				fromS.getAdjacentNodes().remove(toS);
+			if (isUsed(origin)) {
+				return Response.ok().build();
+			} else if (isUsed(destiny)) {
+				return Response.ok().build();
+			} else {
+				Node toS = Graph.getMainGraph().getNodes().get(new Node(new TrainStation(destiny, null)));
+				Node fromS = Graph.getMainGraph().getNodes().get(new Node(new TrainStation(origin, null)));
+				if (fromS.getAdjacentNodes().containsKey(toS)) {
+					fromS.getAdjacentNodes().remove(toS);
+				}
+				return Response.ok().build();
 			}
-			return Response.ok().build();
 		}else {
 			return Response.status(401).build();
 		}
@@ -64,9 +68,13 @@ public class AdminResources {
 	@DELETE
 	public Response deleteStation(@QueryParam("user") String user, @QueryParam("password") String password, @QueryParam("name") String name) {
 		if(user.equals(this.user)&&password.equals(this.password)) {
-			Node toDelete = Graph.getMainGraph().getNodes().get(new Node(new TrainStation(name, null)));
-			Graph.getMainGraph().deleteNode(toDelete);
-			return Response.ok().build();
+			if (isUsed(name)) {
+				return Response.ok().build();
+			} else {
+				Node toDelete = Graph.getMainGraph().getNodes().get(new Node(new TrainStation(name, null)));
+				Graph.getMainGraph().deleteNode(toDelete);
+				return Response.ok().build();
+			}
 		}else {
 			return Response.status(401).build();
 		}
@@ -81,6 +89,14 @@ public class AdminResources {
 		}else {
 			return Response.status(401).build();
 		}
+	}
+	
+	private boolean isUsed(String name) {
+		for(Purchase buy : Purchase.list) {
+			if(buy.getEndPoint().equals(name) || buy.getStartPoint().equals(name)) {
+				return true;
+			}
+		}return false;
 	}
 	
 	
