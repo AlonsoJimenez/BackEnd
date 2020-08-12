@@ -1,71 +1,84 @@
 package cr.ac.tec.adt;
+import java.util.ArrayList;
 
-public class LinkedList <T extends Comparable<T>>{
-	NodeList first;
-	NodeList last;
-	
-	public void remove(T value) {
-		NodeList tempFront = first;
-		NodeList tempBack = first;
-		while(first != null) {
-			if(tempFront.getData().compareTo(value)==0) {
-				tempBack.setReference(tempFront.getReference());
-				return;
-			}
-			tempBack = tempFront;
-			tempFront = tempFront.getReference();
-		}
-	}
-	
-	
-	public void add(T placeToGo) {
-		last.setReference(new NodeList(placeToGo));
-	}
-	
-	public T get(T compareValue) {
-		return this.get(first, compareValue);
-	}
-	
-	private T get(NodeList pointer,T value) {
-		if(pointer.getData().compareTo(value)==0) {
-			return (T) pointer.getData();
-		}
-		else {
-			return this.get(pointer.getReference(), value);
-		}
-	}
-	
-	public int size() {
-		NodeList pointer = first;
-		int tempReturn = 0;
-		while(pointer != null) {
-			pointer = pointer.getReference();
-			tempReturn ++;
-		}
-		return tempReturn;
-	}
-	
-	public T getIndex(int index) {
-		NodeList current = first;
-		for(int x = 0; x < index; x++) {
-			if(current == null)	{
-				return null;
-			}
-			current = current.getReference();
-		}
-		return (T) current.getData();
-	}
-	
-	public boolean contains(T stop) {
-		NodeList pointer = first;
-		while(pointer!=null) {
-			if(pointer.getData().compareTo(stop)==0) {
-				return true
-			}
-		}
-		return false;
-	}
-	
-	
-	
+public class LinkedList {
+    NodeList first;
+
+    public void add(Node node){
+        NodeList current = first;
+        if(first==null){
+            first = new NodeList (node);
+            return;
+        }
+        while (current.getReference ()!=null){
+            current = current.getReference ();
+        }
+        current.setReference ( new NodeList (node));
+    }
+
+    public Node get(Node compare){
+        NodeList current = first;
+        while (current!=null) {
+            if ( compare.compareTo (current.getData ())==0 ) {
+                return current.getData ();
+            } else {
+                current=current.getReference ();
+            }
+        }
+        return null;
+    }
+
+    public Node getIndex(int index){
+        NodeList current = first;
+        while(index!=0){
+            current = current.getReference ();
+            index--;
+        }
+        return current.getData ();
+    }
+
+    public void delete(String name){
+        NodeList pointerHead = first;
+        while(pointerHead.getReference ()!=null) {
+            if ( name.compareTo (pointerHead.getReference ().getData ().getStation().getName())==0 ) {
+                pointerHead.setReference (pointerHead.getReference ().getReference ());
+                return;
+            } else {
+                pointerHead=pointerHead.getReference ();
+            }
+        }
+    }
+
+    public void deleteLast(){
+        NodeList current = first;
+        while (current.getReference () != null){
+            current = current.getReference ();
+        }
+        delete (current.getData ().getStation ().getName());
+    }
+
+    public ArrayList<Node> toArrayList(){
+        ArrayList<Node> toReturn = new ArrayList<> ();
+        NodeList current = first;
+        while(current != null){
+            toReturn.add (current.getData ());
+            current = current.getReference ();
+        }
+        return toReturn;
+    }
+
+    @Override
+    public String toString(){
+        String toReturn = new String ();
+        NodeList current = first;
+        while (current.getReference ()!=null){
+            toReturn += current.getData ().getStation().getName();
+            current = current.getReference ();
+        }
+        toReturn += current.getData ().getStation().getName();
+        return toReturn;
+    }
+
+
 }
+

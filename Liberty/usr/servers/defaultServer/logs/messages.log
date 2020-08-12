@@ -64,3 +64,29 @@ process = 21548@LAPTOP-RVGN66JT
 [8/6/20 19:01:45:537 CST] 00000037 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
 [8/6/20 19:01:45:539 CST] 0000002e com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at C:\Users\pachopaco70\Documents\GitHub\BackEnd\Liberty\usr\servers\defaultServer\logs\state\plugin-cfg.xml.
 [8/6/20 19:01:45:582 CST] 00000037 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application BackEnd updated in 0.311 seconds.
+[8/8/20 21:43:29:455 CST] 000004ee com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  A CWWKE1100I: Waiting for up to 30 seconds for the server to quiesce.
+[8/8/20 21:43:29:476 CST] 000004dc com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel defaultHttpEndpoint-ssl has stopped listening for requests on host 127.0.0.1  (IPv4: 127.0.0.1) port 9443.
+[8/8/20 21:43:29:485 CST] 000004dc com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel wasJmsEndpoint490 has stopped listening for requests on host 127.0.0.1  (IPv4: 127.0.0.1) port 7276.
+[8/8/20 21:43:29:488 CST] 000004dc com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel defaultHttpEndpoint has stopped listening for requests on host 127.0.0.1  (IPv4: 127.0.0.1) port 9080.
+[8/8/20 21:43:29:489 CST] 000004dc com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://localhost:9080/BackEnd/
+[8/8/20 21:43:29:490 CST] 000004dc com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel wasJmsEndpoint490-ssl has stopped listening for requests on host 127.0.0.1  (IPv4: 127.0.0.1) port 7286.
+[8/8/20 21:43:29:534 CST] 000004ee .jbatch.container.services.impl.MemoryPersistenceManagerImpl I CWWKY0005I: The batch In-Memory persistence service is activated.
+[8/8/20 21:43:29:535 CST] 000004ee com.ibm.jbatch.container.impl.BatchKernelImpl                I CWWKY0008I: The batch feature is using persistence type In-Memory.
+[8/8/20 21:43:30:493 CST] 000004ee com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  I CWWKE1101I: Server quiesce complete.
+[8/8/20 21:43:30:625 CST] 000000d1 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application BackEnd has stopped successfully.
+[8/8/20 21:43:30:695 CST] 000004ee .jbatch.container.services.impl.MemoryPersistenceManagerImpl I CWWKY0005I: The batch In-Memory persistence service is deactivated.
+[8/8/20 21:43:30:785 CST] 000004f0 org.apache.yoko.orb.OCI.Transport                            I shutdown: iiop transport using socket Socket[addr=/127.0.0.1,port=63200,localport=2809]
+[8/8/20 21:43:30:791 CST] 000004f1 org.apache.yoko.orb.OCI.Transport                            I shutdown: iiop transport using socket 8374636[SSL_NULL_WITH_NULL_NULL: Socket[addr=/127.0.0.1,port=63201,localport=9402]]
+[8/8/20 21:43:30:803 CST] 000004ee com.ibm.ws.transport.iiop.internal.ORBWrapperInternal        A CWWKI0002I: The CORBA name server is no longer available at corbaloc:iiop:localhost:2809/NameService.
+[8/8/20 21:43:30:975 CST] 000004ee com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSIS1589I: The file store has stopped successfully.
+[8/8/20 21:43:31:095 CST] 000004ee com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSID0121I: JMS server stopped.  
+[8/8/20 21:43:31:303 CST] 000004ee com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0009I: The security service has stopped.
+[8/8/20 21:43:31:320 CST] 000004ee ibm.ws.security.authentication.internal.jaas.JAASServiceImpl I CWWKS1124I: The collective authentication plugin with class name NullCollectiveAuthenticationPlugin has been deactivated. 
+[8/8/20 21:43:31:416 CST] 000004ee org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 196
+[8/8/20 21:43:31:416 CST] 000004ee org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 198
+[8/8/20 21:43:31:417 CST] 000004ee org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 200
+[8/8/20 21:43:31:417 CST] 000004ee org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 204
+[8/8/20 21:43:31:417 CST] 000004ee org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 206
+[8/8/20 21:43:31:417 CST] 000004ee org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 187
+[8/8/20 21:43:31:417 CST] 000004ee org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 190
+[8/8/20 21:43:31:685 CST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0036I: The server defaultServer stopped after 2 days, 2 hours, 42 minutes, 51.747 seconds.
