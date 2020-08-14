@@ -8,11 +8,13 @@ public class Calculator {
 	
 	public Calculator(int price, ArrayList<Node> route) {
 		this.price = price;
-		this.route = route;
+		for(Node node: route) {
+			this.route.add(node.getStation().getName()+"-");
+		}
 	}
 	
 	private int price;
-	private ArrayList<Node> route;
+	private ArrayList<String> route = new ArrayList<String>();
 	
 	public int getPrice() {
 		return price;
@@ -20,10 +22,10 @@ public class Calculator {
 	public void setPrice(int price) {
 		this.price = price;
 	}
-	public ArrayList<Node> getRoute() {
+	public ArrayList<String> getRoute() {
 		return route;
 	}
-	public void setRoute(ArrayList<Node> route) {
+	public void setRoute(ArrayList<String> route) {
 		this.route = route;
 	}
 	

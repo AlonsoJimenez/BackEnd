@@ -1,4 +1,5 @@
 package cr.ac.tec.adt;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -14,23 +15,27 @@ public class Node implements Comparable<Node>{
 
     private TrainStation station;
 
-    private Node shortestPath = this;
+    private Node shortestPath = null;
 
     private Integer distance = Integer.MAX_VALUE;
 
     Map<Node, Integer> adjacentNodes = new HashMap<> ();
+    
+    
 
     public void deleteDestination(Node removal){
-        adjacentNodes.remove (removal);
+    	Node removalAux = Graph.getMainGraph().getNodes().get(removal);
+        adjacentNodes.remove (removalAux);
+        
     }
 
     public void addDestination(Node destination, int distance) {
         adjacentNodes.put(destination, distance);
-        destination.getIsDestinationTo ().add (this);
+        destination.getIsDestinationTo ().add (new Node(this.getStation()));
     }
 
-    public LinkedList getIsDestinationTo() {
-        return isDestinationTo;
+    public ArrayList<Node> getIsDestinationTo() {
+        return isDestinationTo.toArrayList();
     }
 
     public void setIsDestinationTo(LinkedList isDestinationTo) {
@@ -72,11 +77,7 @@ public class Node implements Comparable<Node>{
 
     @Override
     public int compareTo(Node o) {
-        if(o.getStation ().equals (this.station)){
-            return 0;
-        }else{
-            return 1;
-        }
+        return this.station.compareTo(o.station);
     }
 
     @Override

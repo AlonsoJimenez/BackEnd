@@ -1,5 +1,7 @@
 package cr.ac.tec.apis;
 
+import java.util.ArrayList;
+
 import javax.ws.rs.*;
 import javax.ws.rs.core.Response;
 import cr.ac.tec.adt.Graph;
@@ -18,9 +20,9 @@ public class AdminResources {
 	
 	@Path("newStation")
 	@POST
-	public Response createStation(@QueryParam("user") String user, @QueryParam("password") String password, TrainStation station) {
+	public Response createStation(@QueryParam("user") String user, @QueryParam("password") String password, @QueryParam("name") String name) {
 		if(user.equals(this.user)&&password.equals(this.password)) {
-			Graph.getMainGraph().addNode(new Node(station));
+			Graph.getMainGraph().addNode(new Node(new TrainStation(name)));
 			return Response.ok().build();
 		}else {
 			return Response.status(401).build();
@@ -55,6 +57,7 @@ public class AdminResources {
 				if (fromS.getAdjacentNodes().containsKey(toS)) {
 					fromS.getAdjacentNodes().remove(toS);
 				}
+				System.out.println("eliminado");
 				return Response.ok().build();
 			}
 		}else {
@@ -68,9 +71,10 @@ public class AdminResources {
 	@DELETE
 	public Response deleteStation(@QueryParam("user") String user, @QueryParam("password") String password, @QueryParam("name") String name) {
 		if(user.equals(this.user)&&password.equals(this.password)) {
-			if (isUsed(name)) {
+			if (!isUsed(name)) {
 				return Response.ok().build();
 			} else {
+				System.out.println("borrar");
 				Node toDelete = Graph.getMainGraph().getNodes().get(new Node(new TrainStation(name, null)));
 				Graph.getMainGraph().deleteNode(toDelete);
 				return Response.ok().build();
@@ -97,6 +101,24 @@ public class AdminResources {
 				return true;
 			}
 		}return false;
+	}
+	
+	@Path("expirate")
+	@DELETE
+	public Response prueba(@QueryParam("user") String user, @QueryParam("password") String password, String[] elimination) {
+		if(user.equals(this.user)&&password.equals(this.password)) {
+			for(String purchase: elimination) {
+				for(Purchase register: Purchase.list) {
+					if(register.getEmail().equals(purchase)) {
+						Purchase.list.remove(register);	
+					}
+				}
+			}
+			System.out.println("expiradp");
+			return Response.ok().build();
+		}else {
+			return Response.status(401).build();
+		}
 	}
 	
 	

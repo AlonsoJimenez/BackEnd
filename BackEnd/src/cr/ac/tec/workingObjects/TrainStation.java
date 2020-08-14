@@ -7,10 +7,13 @@ public class TrainStation implements Comparable<TrainStation> {
 		this.name = name;
 	}
 	
+	public TrainStation(String name) {
+		this.name = name;
+	}
+	
 	private int[] coordinates;
 	private String name;
-	private String ID;
-	private String color;
+	
 	
 	
 	public int[] getCoordinates() {

@@ -11,11 +11,12 @@ import cr.ac.tec.workingObjects.Calculator;
 import cr.ac.tec.workingObjects.Dijkstra;
 import javax.ws.rs.core.MediaType;
 
-@Path("/user")
+@Path("user/")
 @Consumes(value= MediaType.APPLICATION_JSON)
 @Produces(value = MediaType.APPLICATION_JSON)
 public class UserResources {
 	
+
 	@Path("stations")
 	@GET
 	public Response getStations() {
@@ -32,7 +33,7 @@ public class UserResources {
 			Purchase newBuy = new Purchase(fromS, toS, email, num);
 			Purchase.list.add(newBuy);
 			Node origin = Graph.getMainGraph().getNodes().get(new Node(new TrainStation(fromS, null)));
-			Node destiny = Graph.getMainGraph().getNodes().get(new Node(new TrainStation(fromS, null)));
+			Node destiny = Graph.getMainGraph().getNodes().get(new Node(new TrainStation(toS, null)));
 			Graph calculator = Dijkstra.calculateShortestPathFromSource(Graph.getMainGraph(), origin);
 			int price;
 			Calculator toReturn;

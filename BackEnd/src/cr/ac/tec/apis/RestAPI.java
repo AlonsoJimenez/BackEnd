@@ -16,6 +16,7 @@ public class RestAPI extends Application {
 		Set<Class<?>> classList = new HashSet<>();
 		classList.add(CORSFilter.class);
 		classList.add(AdminResources.class);
+		classList.add(UserResources.class);
 		return classList;
 	}	
 
