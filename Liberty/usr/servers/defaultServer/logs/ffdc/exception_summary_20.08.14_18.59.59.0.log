@@ -1,0 +1,6 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      1    8/14/20 18:59:59:594 CST    8/14/20 18:59:59:594 CST java.util.ConcurrentModificationException com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1105
+                                                                            - C:\Users\pachopaco70\Documents\GitHub\BackEnd\Liberty\usr\servers\defaultServer\logs\ffdc\ffdc_20.08.14_18.59.59.0.log
+------+------+---------------------------+---------------------------+---------------------------

@@ -1,0 +1,331 @@
+********************************************************************************
+product = WebSphere Application Server 20.0.0.8 (wlp-1.0.43.cl200820200721-1900)
+wlp.install.dir = C:/Users/pachopaco70/Documents/GitHub/BackEnd/Liberty/
+java.home = C:\Program Files\Java\jre1.8.0_241
+java.version = 1.8.0_241
+java.runtime = Java(TM) SE Runtime Environment (1.8.0_241-b07)
+os = Windows 10 (10.0; amd64) (en_US)
+process = 18640@LAPTOP-RVGN66JT
+********************************************************************************
+[8/14/20 18:52:19:438 CST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: The server defaultServer has been launched.
+[8/14/20 18:52:19:532 CST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0100I: This product is licensed for development, and limited production use. The full license terms can be viewed here: https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/license/base_ilan/ilan/20.0.0.8/lafiles/en.html
+[8/14/20 18:52:20:512 CST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: The kernel started after 1.235 seconds
+[8/14/20 18:52:20:570 CST] 00000020 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Feature update started.
+[8/14/20 18:52:20:784 CST] 00000014 com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0007I: The security service is starting...
+[8/14/20 18:52:20:960 CST] 00000017 com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: Monitoring dropins for applications.
+[8/14/20 18:52:21:312 CST] 00000016 com.ibm.ws.cache.ServerCache                                 I DYNA1001I: WebSphere Dynamic Cache instance named baseCache initialized successfully.
+[8/14/20 18:52:21:320 CST] 00000016 com.ibm.ws.cache.ServerCache                                 I DYNA1071I: The cache provider default is being used.
+[8/14/20 18:52:21:321 CST] 00000016 com.ibm.ws.cache.CacheServiceImpl                            I DYNA1056I: Dynamic Cache (object cache) initialized successfully.
+[8/14/20 18:52:21:719 CST] 00000014 ibm.ws.security.authentication.internal.jaas.JAASServiceImpl I CWWKS1123I: The collective authentication plugin with class name NullCollectiveAuthenticationPlugin has been activated. 
+[8/14/20 18:52:21:739 CST] 0000002a com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0008I: The security service is ready.
+[8/14/20 18:52:21:741 CST] 0000002a com.ibm.ws.security.token.ltpa.internal.LTPAKeyCreateTask    I CWWKS4105I: LTPA configuration is ready after 0.048 seconds.
+[8/14/20 18:52:21:962 CST] 0000001c com.ibm.ws.ssl.config.WSKeyStore                             I Successfully loaded default keystore: C:/Users/pachopaco70/Documents/GitHub/BackEnd/Liberty/usr/servers/defaultServer/resources/security/key.p12 of type: PKCS12
+[8/14/20 18:52:22:689 CST] 00000014 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSID0108I: JMS server has started.  
+[8/14/20 18:52:22:742 CST] 00000014 com.ibm.ws.security.jaspi.AuthConfigFactoryWrapper           I CWWKS1655I: The default Java Authentication SPI for Containers (JASPIC) AuthConfigFactory class com.ibm.ws.security.jaspi.ProviderRegistry is being used because the Java security property authconfigprovider.factory is not set. 
+[8/14/20 18:52:23:086 CST] 00000014 org.apache.cxf.bus.osgi.CXFActivator                         I Adding the extensions from bundle com.ibm.ws.org.apache.cxf.cxf.rt.ws.addr.2.6.2 (187) [org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider, org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader, org.apache.cxf.ws.addressing.WSAddressingFeature$WSAddressingFeatureApplier, org.apache.cxf.ws.addressing.MAPAggregator$MAPAggregatorLoader]
+[8/14/20 18:52:23:088 CST] 00000014 org.apache.cxf.bus.osgi.CXFActivator                         I Adding the extensions from bundle com.ibm.ws.org.apache.cxf.cxf.rt.bindings.soap.2.6.2 (190) [org.apache.cxf.binding.soap.SoapBindingFactory, org.apache.cxf.binding.soap.SoapTransportFactory]
+[8/14/20 18:52:23:090 CST] 00000014 org.apache.cxf.bus.osgi.CXFActivator                         I Adding the extensions from bundle com.ibm.ws.org.apache.cxf.cxf.rt.bindings.xml.2.6.2 (196) [org.apache.cxf.binding.xml.XMLBindingFactory, org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader]
+[8/14/20 18:52:23:091 CST] 00000014 org.apache.cxf.bus.osgi.CXFActivator                         I Adding the extensions from bundle com.ibm.ws.org.apache.cxf.cxf.rt.frontend.jaxws.2.6.2 (198) [org.apache.cxf.jaxws.context.WebServiceContextResourceResolver]
+[8/14/20 18:52:23:092 CST] 00000014 org.apache.cxf.bus.osgi.CXFActivator                         I Adding the extensions from bundle com.ibm.ws.org.apache.cxf.cxf.rt.management.2.6.2 (200) [org.apache.cxf.management.InstrumentationManager]
+[8/14/20 18:52:23:093 CST] 00000014 org.apache.cxf.bus.osgi.CXFActivator                         I Adding the extensions from bundle com.ibm.ws.org.apache.cxf.cxf.rt.transports.http.2.6.2 (204) [org.apache.cxf.transport.http.HTTPTransportFactory, org.apache.cxf.transport.http.HTTPWSDLExtensionLoader, org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder, org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder, org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider]
+[8/14/20 18:52:23:094 CST] 00000014 org.apache.cxf.bus.osgi.CXFActivator                         I Adding the extensions from bundle com.ibm.ws.org.apache.cxf.cxf.rt.ws.policy.2.6.2 (206) [org.apache.cxf.ws.policy.PolicyEngine, org.apache.cxf.policy.PolicyDataEngine, org.apache.cxf.ws.policy.AssertionBuilderRegistry, org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistry, org.apache.cxf.ws.policy.PolicyBuilder, org.apache.cxf.ws.policy.PolicyAnnotationListener, org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider, org.apache.cxf.ws.policy.attachment.external.DomainExpressionBuilderRegistry, org.apache.cxf.ws.policy.attachment.external.EndpointReferenceDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider, org.apache.cxf.ws.policy.mtom.MTOMAssertionBuilder, org.apache.cxf.ws.policy.mtom.MTOMPolicyInterceptorProvider]
+[8/14/20 18:52:23:598 CST] 00000018 com.ibm.ws.transport.iiop.internal.ORBWrapperInternal        A CWWKI0001I: The CORBA name server is now available at corbaloc:iiop:localhost:2809/NameService.
+[8/14/20 18:52:24:262 CST] 0000002a com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application BackEnd.
+[8/14/20 18:52:24:262 CST] 0000002a bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: The BackEnd application is using the loose application definition at the C:\Users\pachopaco70\Documents\GitHub\BackEnd\Liberty\usr\servers\defaultServer\apps\BackEnd.war.xml location.
+[8/14/20 18:52:24:861 CST] 0000002a org.jboss.weld.Version                                       I WELD-000900: 2.4.8 (Final)
+[8/14/20 18:52:25:123 CST] 0000002a com.ibm.ws.session.WASSessionCore                            I SESN8501I: The session manager did not find a persistent storage location; HttpSession objects will be stored in the local application server's memory.
+[8/14/20 18:52:25:139 CST] 0000002a com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: BackEnd.
+[8/14/20 18:52:25:142 CST] 0000002a com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module BackEnd has been bound to default_host.
+[8/14/20 18:52:25:144 CST] 0000002a com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://localhost:9080/BackEnd/
+[8/14/20 18:52:25:179 CST] 0000004d com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at C:\Users\pachopaco70\Documents\GitHub\BackEnd\Liberty\usr\servers\defaultServer\logs\state\plugin-cfg.xml.
+[8/14/20 18:52:25:181 CST] 0000004c com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/BackEnd
+[8/14/20 18:52:25:184 CST] 0000004c com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[8/14/20 18:52:25:317 CST] 0000004c com.ibm.ws.cache.CacheServiceImpl                            I DYNA1056I: Dynamic Cache (object cache) initialized successfully.
+[8/14/20 18:52:25:419 CST] 0000004c com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Application BackEnd started in 1.157 seconds.
+[8/14/20 18:52:25:467 CST] 00000020 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: TCP Channel defaultHttpEndpoint has been started and is now listening for requests on host 127.0.0.1  (IPv4: 127.0.0.1) port 9080.
+[8/14/20 18:52:25:468 CST] 00000020 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: TCP Channel wasJmsEndpoint490 has been started and is now listening for requests on host 127.0.0.1  (IPv4: 127.0.0.1) port 7276.
+[8/14/20 18:52:25:469 CST] 00000020 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: TCP Channel defaultHttpEndpoint-ssl has been started and is now listening for requests on host 127.0.0.1  (IPv4: 127.0.0.1) port 9443.
+[8/14/20 18:52:25:469 CST] 00000020 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: TCP Channel wasJmsEndpoint490-ssl has been started and is now listening for requests on host 127.0.0.1  (IPv4: 127.0.0.1) port 7286.
+[8/14/20 18:52:25:480 CST] 00000020 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: The server installed the following features: [appClientSupport-1.0, appSecurity-2.0, batch-1.0, beanValidation-1.1, cdi-1.2, concurrent-1.0, distributedMap-1.0, ejb-3.2, ejbHome-3.2, ejbLite-3.2, ejbPersistentTimer-3.2, ejbRemote-3.2, el-3.0, j2eeManagement-1.1, jacc-1.5, jaspic-1.1, javaMail-1.5, javaee-7.0, jaxb-2.2, jaxrs-2.0, jaxrsClient-2.0, jaxws-2.2, jca-1.7, jcaInboundSecurity-1.0, jdbc-4.1, jms-2.0, jndi-1.0, jpa-2.1, jpaContainer-2.1, jsf-2.2, json-1.0, jsonp-1.0, jsp-2.3, localConnector-1.0, managedBeans-1.0, mdb-3.2, servlet-3.1, ssl-1.0, wasJmsClient-2.0, wasJmsSecurity-1.0, wasJmsServer-1.0, webProfile-7.0, websocket-1.1].
+[8/14/20 18:52:25:481 CST] 00000020 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Feature update completed in 4.969 seconds.
+[8/14/20 18:52:25:482 CST] 00000020 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: The defaultServer server is ready to run a smarter planet. The defaultServer server started in 6.205 seconds.
+[8/14/20 18:53:03:596 CST] 0000002a .ibm.ws.jaxrs.2.0.common:1.0.43.cl200820200721-1900(id=259)] I Setting the server's publish address to be /rest/
+[8/14/20 18:53:03:888 CST] 0000002a com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [BackEnd] [/BackEnd] [cr.ac.tec.apis.RestAPI]: Initialization successful.
+[8/14/20 18:55:12:803 CST] 00000029 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://localhost:9080/BackEnd/
+[8/14/20 18:55:12:809 CST] 00000029 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [BackEnd] [/BackEnd] [cr.ac.tec.apis.RestAPI]: Destroy successful.
+[8/14/20 18:55:12:858 CST] 00000029 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application BackEnd has stopped successfully.
+[8/14/20 18:55:12:868 CST] 00000029 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application BackEnd.
+[8/14/20 18:55:12:868 CST] 00000029 bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: The BackEnd application is using the loose application definition at the C:\Users\pachopaco70\Documents\GitHub\BackEnd\Liberty\usr\servers\defaultServer\apps\BackEnd.war.xml location.
+[8/14/20 18:55:13:092 CST] 0000002a com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at C:\Users\pachopaco70\Documents\GitHub\BackEnd\Liberty\usr\servers\defaultServer\logs\state\plugin-cfg.xml.
+[8/14/20 18:55:13:104 CST] 00000029 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: BackEnd.
+[8/14/20 18:55:13:105 CST] 00000029 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module BackEnd has been bound to default_host.
+[8/14/20 18:55:13:105 CST] 00000029 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://localhost:9080/BackEnd/
+[8/14/20 18:55:13:127 CST] 00000073 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at C:\Users\pachopaco70\Documents\GitHub\BackEnd\Liberty\usr\servers\defaultServer\logs\state\plugin-cfg.xml.
+[8/14/20 18:55:13:132 CST] 00000057 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/BackEnd
+[8/14/20 18:55:13:133 CST] 00000057 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[8/14/20 18:55:13:183 CST] 00000057 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application BackEnd updated in 0.315 seconds.
+[8/14/20 18:55:19:338 CST] 00000067 .ibm.ws.jaxrs.2.0.common:1.0.43.cl200820200721-1900(id=259)] I Setting the server's publish address to be /rest/
+[8/14/20 18:55:19:359 CST] 00000067 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [BackEnd] [/BackEnd] [cr.ac.tec.apis.RestAPI]: Initialization successful.
+[8/14/20 18:59:59:530 CST] 00000029 .ibm.ws.jaxrs.2.0.common:1.0.43.cl200820200721-1900(id=259)] W Application {http://apis.tec.ac.cr/}UserResources has thrown exception, unwinding now
+org.apache.cxf.interceptor.Fault
+	at org.apache.cxf.service.invoker.AbstractInvoker.createFault(AbstractInvoker.java:162)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:128)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.invoke(LibertyJaxRsInvoker.java:273)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:191)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.invoke(LibertyJaxRsInvoker.java:444)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:101)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:61)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:99)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:309)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:124)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:271)
+	at com.ibm.ws.jaxrs20.endpoint.AbstractJaxRsWebEndpoint.invoke(AbstractJaxRsWebEndpoint.java:136)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.handleRequest(IBMRestServlet.java:146)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.doDelete(IBMRestServlet.java:131)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:713)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.service(IBMRestServlet.java:96)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1230)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:729)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:426)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.invokeTarget(WebAppFilterChain.java:182)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:93)
+	at com.ibm.ws.security.jaspi.JaspiServletFilter.doFilter(JaspiServletFilter.java:56)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:201)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:90)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:1001)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1139)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1010)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:75)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:936)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:279)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1134)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:415)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:374)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:577)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:511)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:359)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:70)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:504)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:574)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:958)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1047)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:239)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.util.ConcurrentModificationException
+	at java.util.ArrayList$Itr.checkForComodification(Unknown Source)
+	at java.util.ArrayList$Itr.next(Unknown Source)
+	at cr.ac.tec.apis.AdminResources.prueba(AdminResources.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsServerFactoryBean.performInvocation(LibertyJaxRsServerFactoryBean.java:656)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.performInvocation(LibertyJaxRsInvoker.java:160)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	... 43 more
+
+[8/14/20 18:59:59:537 CST] 00000029 .ibm.ws.jaxrs.2.0.common:1.0.43.cl200820200721-1900(id=259)] W Exception in handleFault on interceptor org.apache.cxf.jaxrs.interceptor.JAXRSDefaultFaultOutInterceptor@2f1149ac
+org.apache.cxf.interceptor.Fault
+	at org.apache.cxf.service.invoker.AbstractInvoker.createFault(AbstractInvoker.java:162)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:128)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.invoke(LibertyJaxRsInvoker.java:273)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:191)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.invoke(LibertyJaxRsInvoker.java:444)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:101)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:61)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:99)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:309)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:124)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:271)
+	at com.ibm.ws.jaxrs20.endpoint.AbstractJaxRsWebEndpoint.invoke(AbstractJaxRsWebEndpoint.java:136)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.handleRequest(IBMRestServlet.java:146)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.doDelete(IBMRestServlet.java:131)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:713)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.service(IBMRestServlet.java:96)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1230)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:729)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:426)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.invokeTarget(WebAppFilterChain.java:182)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:93)
+	at com.ibm.ws.security.jaspi.JaspiServletFilter.doFilter(JaspiServletFilter.java:56)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:201)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:90)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:1001)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1139)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1010)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:75)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:936)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:279)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1134)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:415)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:374)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:577)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:511)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:359)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:70)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:504)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:574)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:958)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1047)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:239)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.util.ConcurrentModificationException
+	at java.util.ArrayList$Itr.checkForComodification(Unknown Source)
+	at java.util.ArrayList$Itr.next(Unknown Source)
+	at cr.ac.tec.apis.AdminResources.prueba(AdminResources.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsServerFactoryBean.performInvocation(LibertyJaxRsServerFactoryBean.java:656)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.performInvocation(LibertyJaxRsInvoker.java:160)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	... 43 more
+
+[8/14/20 18:59:59:539 CST] 00000029 .ibm.ws.jaxrs.2.0.common:1.0.43.cl200820200721-1900(id=259)] E An unexpected error occurred during error handling. No further error processing will occur.
+org.apache.cxf.interceptor.Fault
+	at org.apache.cxf.service.invoker.AbstractInvoker.createFault(AbstractInvoker.java:162)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:128)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.invoke(LibertyJaxRsInvoker.java:273)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:191)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.invoke(LibertyJaxRsInvoker.java:444)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:101)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:61)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:99)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:309)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:124)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:271)
+	at com.ibm.ws.jaxrs20.endpoint.AbstractJaxRsWebEndpoint.invoke(AbstractJaxRsWebEndpoint.java:136)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.handleRequest(IBMRestServlet.java:146)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.doDelete(IBMRestServlet.java:131)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:713)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.service(IBMRestServlet.java:96)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1230)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:729)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:426)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.invokeTarget(WebAppFilterChain.java:182)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:93)
+	at com.ibm.ws.security.jaspi.JaspiServletFilter.doFilter(JaspiServletFilter.java:56)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:201)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:90)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:1001)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1139)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1010)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:75)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:936)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:279)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1134)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:415)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:374)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:577)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:511)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:359)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:70)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:504)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:574)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:958)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1047)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:239)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.util.ConcurrentModificationException
+	at java.util.ArrayList$Itr.checkForComodification(Unknown Source)
+	at java.util.ArrayList$Itr.next(Unknown Source)
+	at cr.ac.tec.apis.AdminResources.prueba(AdminResources.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsServerFactoryBean.performInvocation(LibertyJaxRsServerFactoryBean.java:656)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.performInvocation(LibertyJaxRsInvoker.java:160)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	... 43 more
+
+[8/14/20 18:59:59:591 CST] 00000029 com.ibm.ws.webcontainer.util.ApplicationErrorUtils           E SRVE0777E: Exception thrown by application class 'java.util.ArrayList$Itr.checkForComodification:-1'
+java.util.ConcurrentModificationException
+	at java.util.ArrayList$Itr.checkForComodification(Unknown Source)
+	at java.util.ArrayList$Itr.next(Unknown Source)
+	at cr.ac.tec.apis.AdminResources.prueba(AdminResources.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsServerFactoryBean.performInvocation(LibertyJaxRsServerFactoryBean.java:656)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.performInvocation(LibertyJaxRsInvoker.java:160)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.invoke(LibertyJaxRsInvoker.java:273)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:191)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.invoke(LibertyJaxRsInvoker.java:444)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:101)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:61)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:99)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:309)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:124)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:271)
+	at com.ibm.ws.jaxrs20.endpoint.AbstractJaxRsWebEndpoint.invoke(AbstractJaxRsWebEndpoint.java:136)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.handleRequest(IBMRestServlet.java:146)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.doDelete(IBMRestServlet.java:131)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:713)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.service(IBMRestServlet.java:96)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1230)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:729)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:426)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.invokeTarget(WebAppFilterChain.java:182)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:93)
+	at com.ibm.ws.security.jaspi.JaspiServletFilter.doFilter(JaspiServletFilter.java:56)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:201)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:90)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:1001)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1139)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1010)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:75)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:936)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:279)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1134)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:415)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:374)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:577)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:511)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:359)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:70)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:504)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:574)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:958)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1047)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:239)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+[8/14/20 18:59:59:865 CST] 00000029 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "java.util.ConcurrentModificationException com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1105" at ffdc_20.08.14_18.59.59.0.log
+[8/14/20 19:00:26:462 CST] 00000093 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  A CWWKE1100I: Waiting for up to 30 seconds for the server to quiesce.
+[8/14/20 19:00:26:468 CST] 00000029 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel defaultHttpEndpoint-ssl has stopped listening for requests on host 127.0.0.1  (IPv4: 127.0.0.1) port 9443.
+[8/14/20 19:00:26:470 CST] 00000029 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel wasJmsEndpoint490 has stopped listening for requests on host 127.0.0.1  (IPv4: 127.0.0.1) port 7276.
+[8/14/20 19:00:26:471 CST] 00000029 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel defaultHttpEndpoint has stopped listening for requests on host 127.0.0.1  (IPv4: 127.0.0.1) port 9080.
+[8/14/20 19:00:26:471 CST] 00000029 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://localhost:9080/BackEnd/
+[8/14/20 19:00:26:472 CST] 00000029 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel wasJmsEndpoint490-ssl has stopped listening for requests on host 127.0.0.1  (IPv4: 127.0.0.1) port 7286.
+[8/14/20 19:00:26:503 CST] 00000093 .jbatch.container.services.impl.MemoryPersistenceManagerImpl I CWWKY0005I: The batch In-Memory persistence service is activated.
+[8/14/20 19:00:26:504 CST] 00000093 com.ibm.jbatch.container.impl.BatchKernelImpl                I CWWKY0008I: The batch feature is using persistence type In-Memory.
+[8/14/20 19:00:27:477 CST] 00000093 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  I CWWKE1101I: Server quiesce complete.
+[8/14/20 19:00:27:504 CST] 00000090 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [BackEnd] [/BackEnd] [cr.ac.tec.apis.RestAPI]: Destroy successful.
+[8/14/20 19:00:27:507 CST] 00000090 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application BackEnd has stopped successfully.
+[8/14/20 19:00:27:546 CST] 00000093 .jbatch.container.services.impl.MemoryPersistenceManagerImpl I CWWKY0005I: The batch In-Memory persistence service is deactivated.
+[8/14/20 19:00:27:593 CST] 00000096 org.apache.yoko.orb.OCI.Transport                            I shutdown: iiop transport using socket Socket[addr=/127.0.0.1,port=65240,localport=2809]
+[8/14/20 19:00:27:604 CST] 00000093 com.ibm.ws.transport.iiop.internal.ORBWrapperInternal        A CWWKI0002I: The CORBA name server is no longer available at corbaloc:iiop:localhost:2809/NameService.
+[8/14/20 19:00:27:714 CST] 00000093 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSIS1589I: The file store has stopped successfully.
+[8/14/20 19:00:27:837 CST] 00000093 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSID0121I: JMS server stopped.  
+[8/14/20 19:00:28:015 CST] 00000093 com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0009I: The security service has stopped.
+[8/14/20 19:00:28:062 CST] 00000093 ibm.ws.security.authentication.internal.jaas.JAASServiceImpl I CWWKS1124I: The collective authentication plugin with class name NullCollectiveAuthenticationPlugin has been deactivated. 
+[8/14/20 19:00:28:334 CST] 00000093 org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 196
+[8/14/20 19:00:28:334 CST] 00000093 org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 198
+[8/14/20 19:00:28:334 CST] 00000093 org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 200
+[8/14/20 19:00:28:334 CST] 00000093 org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 204
+[8/14/20 19:00:28:334 CST] 00000093 org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 206
+[8/14/20 19:00:28:334 CST] 00000093 org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 187
+[8/14/20 19:00:28:334 CST] 00000093 org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 190
+[8/14/20 19:00:28:640 CST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0036I: The server defaultServer stopped after 8 minutes, 9.363 seconds.

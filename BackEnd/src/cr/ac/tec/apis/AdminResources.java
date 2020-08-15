@@ -34,7 +34,7 @@ public class AdminResources {
 	public Response createStop(@QueryParam("user") String user, @QueryParam("password") String password, @QueryParam("origin") String origin, @QueryParam("destiny") String destiny, @QueryParam("distance") int distance ) {
 		if(user.equals(this.user)&&password.equals(this.password)) {
 			Node toS = Graph.getMainGraph().getNodes().get(new Node(new TrainStation(destiny, null)));
-			Graph.getMainGraph().getNodes().get(new Node(new TrainStation(origin, null))).addDestination(toS, distance);			
+			Graph.getMainGraph().getNodes().get(new Node(new TrainStation(origin))).addDestination(toS, distance);			
 			return Response.ok().build();
 		}else {
 			return Response.status(401).build();
@@ -47,9 +47,9 @@ public class AdminResources {
 	@DELETE
 	public Response deleteStop(@QueryParam("user") String user, @QueryParam("password") String password, @QueryParam("origin") String origin, @QueryParam("destiny") String destiny) {
 		if(user.equals(this.user)&&password.equals(this.password)) {
-			if (isUsed(origin)) {
+			if (!isUsed(origin)) {
 				return Response.ok().build();
-			} else if (isUsed(destiny)) {
+			} else if (!isUsed(destiny)) {
 				return Response.ok().build();
 			} else {
 				Node toS = Graph.getMainGraph().getNodes().get(new Node(new TrainStation(destiny, null)));

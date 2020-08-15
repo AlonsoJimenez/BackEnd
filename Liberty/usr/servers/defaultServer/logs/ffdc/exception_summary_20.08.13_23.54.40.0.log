@@ -1,6 +1,0 @@
-
- Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
-------+------+---------------------------+---------------------------+---------------------------
-     0      1    8/13/20 23:54:40:327 CST    8/13/20 23:54:40:327 CST java.lang.NullPointerException com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1105
-                                                                            - C:\Users\pachopaco70\Documents\GitHub\BackEnd\Liberty\usr\servers\defaultServer\logs\ffdc\ffdc_20.08.13_23.54.40.0.log
-------+------+---------------------------+---------------------------+---------------------------
