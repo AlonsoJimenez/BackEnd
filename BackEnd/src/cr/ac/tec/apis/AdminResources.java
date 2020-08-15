@@ -68,9 +68,9 @@ public class AdminResources {
 	@DELETE
 	public Response deleteStop(@QueryParam("user") String user, @QueryParam("password") String password, @QueryParam("origin") String origin, @QueryParam("destiny") String destiny) {
 		if(user.equals(this.user)&&password.equals(this.password)) {
-			if (!isUsed(origin)) {
+			if (isUsed(origin)) {
 				return Response.ok().build();
-			} else if (!isUsed(destiny)) {
+			} else if (isUsed(destiny)) {
 				return Response.ok().build();
 			} else {
 				Node toS = Graph.getMainGraph().getNodes().get(new Node(new TrainStation(destiny, null)));
@@ -98,7 +98,7 @@ public class AdminResources {
 	@DELETE
 	public Response deleteStation(@QueryParam("user") String user, @QueryParam("password") String password, @QueryParam("name") String name) {
 		if(user.equals(this.user)&&password.equals(this.password)) {
-			if (!isUsed(name)) {
+			if (isUsed(name)) {
 				return Response.ok().build();
 			} else {
 				System.out.println("borrar");
