@@ -5,6 +5,7 @@ public class NodeList {
     NodeList(Node data){
         this.data = data;
     }
+    
     Node data;
     NodeList reference;
 

@@ -7,6 +7,10 @@ import javax.ws.rs.container.ContainerResponseFilter;
 import javax.ws.rs.ext.Provider;
 import java.io.IOException;
 
+/**
+ * Filtro para saltar la seguridad de CORS
+ *
+ */
 @Provider
 public class CORSFilter implements ContainerResponseFilter {
     @Override

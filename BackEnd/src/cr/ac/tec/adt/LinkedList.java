@@ -2,8 +2,13 @@ package cr.ac.tec.adt;
 import java.util.ArrayList;
 
 public class LinkedList {
+	
     NodeList first;
 
+    /**
+     * @param node
+     * Agrega  valor de un nodo a la lista
+     */
     public void add(Node node){
         NodeList current = first;
         if(first==null){
@@ -16,6 +21,10 @@ public class LinkedList {
         current.setReference ( new NodeList (node));
     }
 
+    /**
+     * @param compare
+     * @return devuelve el nodo encontrado
+     */
     public Node get(Node compare){
         NodeList current = first;
         while (current!=null) {
@@ -28,6 +37,10 @@ public class LinkedList {
         return null;
     }
 
+    /**
+     * @param index
+     * @return valor dependiendo del valor del index
+     */
     public Node getIndex(int index){
         NodeList current = first;
         while(index!=0){
@@ -37,6 +50,10 @@ public class LinkedList {
         return current.getData ();
     }
 
+    /**
+     * @param name
+     * borra nodo de la lista
+     */
     public void delete(String name){
         NodeList pointerHead = first;
         while(pointerHead.getReference ()!=null) {
@@ -49,6 +66,9 @@ public class LinkedList {
         }
     }
 
+    /**
+     * elimina ultimo nodo
+     */
     public void deleteLast(){
         NodeList current = first;
         while (current.getReference () != null){
@@ -57,6 +77,9 @@ public class LinkedList {
         delete (current.getData ().getStation ().getName());
     }
 
+    /**
+     * @return arraylist basado en la lista
+     */
     public ArrayList<Node> toArrayList(){
         ArrayList<Node> toReturn = new ArrayList<> ();
         NodeList current = first;

@@ -17,17 +17,25 @@ import javax.ws.rs.core.MediaType;
 public class UserResources {
 	
 
+	/**
+	 * @return las estaciones de trenes disponibles para el usuario
+	 */
 	@Path("stations")
 	@GET
 	public Response getStations() {
 		return Response.ok(Graph.getMainGraph().getNodes().toArrayList()).build();
 	}
 	
+	/**
+	 * @param fromS
+	 * @param toS
+	 * @param num
+	 * @param email
+	 * @return estado de la compra de tiquete por medio de codigos https 
+	 */
 	@Path("purchase")
 	@POST
-	public Response buyTickets(@QueryParam("fromS") String fromS ,@QueryParam("toS") String toS, @QueryParam("num") int num, @QueryParam("email") String email ) {
-		if(num<=0) {
-			System.out.println("Wont proceed with purchase");
+	public Response buyTickets(@QueryParam("fromS") String fromS ,@QueryParam("toS") String toS, @QueryParam("num") int num, @QueryParam("email") String email ) { if(num<=0) { System.out.println("Wont proceed with purchase");
 			return Response.status(405).build();
 		}else {
 			Purchase newBuy = new Purchase(fromS, toS, email, num);

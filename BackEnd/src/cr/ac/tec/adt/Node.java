@@ -23,17 +23,28 @@ public class Node implements Comparable<Node>{
     
     
 
+    /**
+     * @param removal
+     * Elimina destino del nodo del grafo
+     * Requiere buscar el nodo a eliminar previamente
+     */
     public void deleteDestination(Node removal){
     	Node removalAux = Graph.getMainGraph().getNodes().get(removal);
         adjacentNodes.remove (removalAux);
         
     }
 
+    /**
+     * @param destination
+     * @param distance
+     * Agrega destino desde el nodo
+     */
     public void addDestination(Node destination, int distance) {
         adjacentNodes.put(destination, distance);
         destination.getIsDestinationTo ().add (new Node(this.getStation()));
     }
 
+    
     public ArrayList<Node> getIsDestinationTo() {
         return isDestinationTo.toArrayList();
     }

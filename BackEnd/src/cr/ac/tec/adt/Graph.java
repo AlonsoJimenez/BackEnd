@@ -46,6 +46,9 @@ public class Graph {
         return toReturn;
     }
     
+    /**
+     * @return singleton para acceder a la lista de datos del sistema
+     */
     public static Graph getMainGraph() {
     	if(mainGraph == null) {
     		mainGraph = new Graph();    		
